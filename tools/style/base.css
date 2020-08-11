@@ -1,0 +1,116 @@
+body {
+
+	background-image: url(../source/bg.jpg);
+	background-attachment: fixed;
+}
+#headerBg {
+	height: 60px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+#headerTab {
+	float: right;
+	margin-right: 20%;
+
+}
+#headerTab span {
+	position: relative;
+	top: 25px;
+	border-radius: 2px;
+	color: white;
+	font-weight: bold;
+	margin-right: 10px;
+}
+#timer {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	
+}
+.contentBox {
+	margin-top: 80px;
+	margin-bottom: 50px;
+	width: 600px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;	
+	border-radius: 5px;
+	background-attachment: fixed;
+}
+.descBox {
+	border-radius: 2px;
+	float: left;
+	clear: left;
+	margin-bottom: 5px;
+}
+.titleImg {
+	width: 150px;
+	height: 120px;
+	background-color: lightgray;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+}
+.titleImg img {
+	width: 150px;
+	height: 120px;
+	border-radius: 2px;
+}
+.title {
+	padding-top: 20px;
+	width: 400px;
+	padding-left: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: bold;
+}
+.desc {
+	width: 400px;
+	padding-left: 5px;
+	padding-top: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	font-weight: lighter;
+}
+.pageBox {
+	clear: left;
+	text-align: center;
+	padding-top: 50px;
+}
+.pageBox a {
+	margin: 5px;
+	text-decoration: none;
+	color: black;
+}
+a:link {
+	color: black;
+	font-weight: bold;
+}
+a:hover {
+	color: red;
+}
+footer {
+	bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+footer span {
+	margin-left: 10px;
+}
+hr {
+	clear: left;
+	width: 500px;
+	opacity: 0.3;
+	border: solid, 0.1px;
+}
