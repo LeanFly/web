@@ -1,7 +1,6 @@
-from sched import scheduler
+
 from bs4 import BeautifulSoup
 import requests
-from urllib.request import urlretrieve
 from pathlib import Path
 import base64
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -42,7 +41,10 @@ def download_img(img_list):
         # 使用 urlretrive 下载
         img_path = Path(save_dir) / Path(i).name
         try:
-            urlretrieve(i, img_path)
+            with open(img_path, "wb") as f:
+                req = requests.get(i)
+                f.write(req.content)
+            print("已下载 ->", img_path)
         except Exception as e:
             print("下载图片异常 ->", str(e))
             continue
